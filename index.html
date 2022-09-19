@@ -4,70 +4,185 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .msg {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 100px;
-        padding: 0.5em;
-        border: 1px solid black;
-        font-size: 1.5em;
-      }
-      .msg_text {
-        width: calc(100%-100px);
-        height: 100%;
-        border: none;
-        resize: none;
-      }
-      .msg_text:focus {
-        outline: none;
-      }
-      .msg_send {
-        width: 100px;
-        height: 100%;
-        border-radius: 8px;
-        background-color: bisque;
-      }
-      video {
-        width: 50%;
-      }
-
-      .player {
-        padding-top: 56.25%;
-        position: relative;
-        background-color: aqua;
-      }
-      iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
+    <title>Changh2's Responsive Web</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/navigation.css" rel="stylesheet" />
+    <link href="css/thumbs.css" rel="stylesheet" />
+    <style></style>
   </head>
   <body>
-    <div class="msg">
-      <textarea class="msg_text"></textarea>
-      <button class="msg_send">전송</button>
-    </div>
-    <picture>
-      <source srcset="imgs/2.jpeg" media="(min-width:900px)" />
-      <img src="imgs/1.jpeg" />
-    </picture>
-    <video src="videos/1.mp4" controls></video>
-    <div class="player">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/ieUJRLZg_UU"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </div>
+    <header class="header">
+      <div class="header_wrapper">
+        <h1 class="header_start">
+          <button class="header_hamburger">&#9776;</button>
+          <span class="header_title">ChangTube</span>
+        </h1>
+        <div class="header_center">
+          <form class="header_form" onsubmit="return false;">
+            <input class="header_input--text" placeholder="보고싶은 동영상" />
+            <button class="header_input--button">검색</button>
+          </form>
+        </div>
+        <div class="header_end">
+          <button class="header_search">&#128269;</button>
+          <div class="header_profile"></div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <ul class="nav_wrapper">
+        <li>
+          <button class="nav_icon">&#9829;</button>
+          <button class="nav_menu">메뉴 항목</button>
+        </li>
+        <li>
+          <button class="nav_icon">&#9829;</button>
+          <button class="nav_menu">메뉴 항목</button>
+        </li>
+        <li>
+          <button class="nav_icon">&#9829;</button>
+          <button class="nav_menu">메뉴 항목</button>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="thumbs">
+      <div class="thumbs_wrapper">
+        <div class="thumbs_item">
+          <img class="thumbs_thumbnail" src="./imgs/1.jpeg" />
+          <div class="thumbs_info">
+            <div class="thumbs_profile"></div>
+            <div class="thumbs_text">
+              <h3 class="thumbs_text--title">영상 제목</h3>
+              <p class="thumbs_text--owner">게시자</p>
+              <p class="thumbs_text--anal">조회수 0620회 &#183; 1시간전</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumbs_item">
+          <img class="thumbs_thumbnail" src="./imgs/1.jpeg" />
+          <div class="thumbs_info">
+            <div class="thumbs_profile"></div>
+            <div class="thumbs_text">
+              <h3 class="thumbs_text--title">영상 제목</h3>
+              <p class="thumbs_text--owner">게시자</p>
+              <p class="thumbs_text--anal">조회수 0620회 &#183; 1시간전</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumbs_item">
+          <img class="thumbs_thumbnail" src="./imgs/1.jpeg" />
+          <div class="thumbs_info">
+            <div class="thumbs_profile"></div>
+            <div class="thumbs_text">
+              <h3 class="thumbs_text--title">영상 제목</h3>
+              <p class="thumbs_text--owner">게시자</p>
+              <p class="thumbs_text--anal">조회수 0620회 &#183; 1시간전</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumbs_item">
+          <img class="thumbs_thumbnail" src="./imgs/1.jpeg" />
+          <div class="thumbs_info">
+            <div class="thumbs_profile"></div>
+            <div class="thumbs_text">
+              <h3 class="thumbs_text--title">영상 제목</h3>
+              <p class="thumbs_text--owner">게시자</p>
+              <p class="thumbs_text--anal">조회수 0620회 &#183; 1시간전</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumbs_item">
+          <img class="thumbs_thumbnail" src="./imgs/1.jpeg" />
+          <div class="thumbs_info">
+            <div class="thumbs_profile"></div>
+            <div class="thumbs_text">
+              <h3 class="thumbs_text--title">영상 제목</h3>
+              <p class="thumbs_text--owner">게시자</p>
+              <p class="thumbs_text--anal">조회수 0620회 &#183; 1시간전</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumbs_item">
+          <img class="thumbs_thumbnail" src="./imgs/1.jpeg" />
+          <div class="thumbs_info">
+            <div class="thumbs_profile"></div>
+            <div class="thumbs_text">
+              <h3 class="thumbs_text--title">영상 제목</h3>
+              <p class="thumbs_text--owner">게시자</p>
+              <p class="thumbs_text--anal">조회수 0620회 &#183; 1시간전</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumbs_item">
+          <img class="thumbs_thumbnail" src="./imgs/1.jpeg" />
+          <div class="thumbs_info">
+            <div class="thumbs_profile"></div>
+            <div class="thumbs_text">
+              <h3 class="thumbs_text--title">영상 제목</h3>
+              <p class="thumbs_text--owner">게시자</p>
+              <p class="thumbs_text--anal">조회수 0620회 &#183; 1시간전</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumbs_item">
+          <img class="thumbs_thumbnail" src="./imgs/1.jpeg" />
+          <div class="thumbs_info">
+            <div class="thumbs_profile"></div>
+            <div class="thumbs_text">
+              <h3 class="thumbs_text--title">영상 제목</h3>
+              <p class="thumbs_text--owner">게시자</p>
+              <p class="thumbs_text--anal">조회수 0620회 &#183; 1시간전</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumbs_item">
+          <img class="thumbs_thumbnail" src="./imgs/1.jpeg" />
+          <div class="thumbs_info">
+            <div class="thumbs_profile"></div>
+            <div class="thumbs_text">
+              <h3 class="thumbs_text--title">영상 제목</h3>
+              <p class="thumbs_text--owner">게시자</p>
+              <p class="thumbs_text--anal">조회수 0620회 &#183; 1시간전</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumbs_item">
+          <img class="thumbs_thumbnail" src="./imgs/1.jpeg" />
+          <div class="thumbs_info">
+            <div class="thumbs_profile"></div>
+            <div class="thumbs_text">
+              <h3 class="thumbs_text--title">영상 제목</h3>
+              <p class="thumbs_text--owner">게시자</p>
+              <p class="thumbs_text--anal">조회수 0620회 &#183; 1시간전</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumbs_item">
+          <img class="thumbs_thumbnail" src="./imgs/1.jpeg" />
+          <div class="thumbs_info">
+            <div class="thumbs_profile"></div>
+            <div class="thumbs_text">
+              <h3 class="thumbs_text--title">영상 제목</h3>
+              <p class="thumbs_text--owner">게시자</p>
+              <p class="thumbs_text--anal">조회수 0620회 &#183; 1시간전</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumbs_item">
+          <img class="thumbs_thumbnail" src="./imgs/1.jpeg" />
+          <div class="thumbs_info">
+            <div class="thumbs_profile"></div>
+            <div class="thumbs_text">
+              <h3 class="thumbs_text--title">영상 제목</h3>
+              <p class="thumbs_text--owner">게시자</p>
+              <p class="thumbs_text--anal">조회수 0620회 &#183; 1시간전</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
